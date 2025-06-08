@@ -990,7 +990,17 @@ section,
   list-style: none;
   text-align: center;
 }
-
+.portfolio-text {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+  margin-top: 10px;
+}
+.portfolio-head{
+  /* display: flex; */
+ font-weight: bold;
+ /* font-size: large; */
+}
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
@@ -1025,7 +1035,7 @@ section,
 }
 
 .portfolio .portfolio-item {
-  position: relative;
+  /* position: relative; */
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1033,11 +1043,11 @@ section,
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
+  bottom: -140px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
-  padding: 15px;
+  padding-inline: 25px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1058,26 +1068,26 @@ section,
   position: absolute;
   right: 50px;
   font-size: 24px;
-  top: calc(50% - 14px);
+  top: calc(50% - 14px); 
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   transition: 0.3s;
   line-height: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+/* .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: var(--accent-color);
-}
+} */
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.portfolio .portfolio-item .details-link {
   right: 14px;
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+/* .portfolio .portfolio-item:hover {
   opacity: 1;
-  bottom: 20px;
-}
+  bottom: 0;
+} */
 
 /*--------------------------------------------------------------
 # Pricing Section
